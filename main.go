@@ -9,7 +9,7 @@ import (
 
 func main() {
 	Println("Scrap Initiating...")
-	posts := scrap.Init()
+	posts, links := scrap.Init()
 	Println("Posts are ", posts)
 	cache.ClientInit()
 	router.Init()
